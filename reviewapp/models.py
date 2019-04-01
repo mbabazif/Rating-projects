@@ -4,7 +4,7 @@ from django.db import models
 import datetime as dt
 
 class tags(models.Model):
-    name = model.CharField(max_length=30)
+    name = models.CharField(max_length=30)
 
     def __str__(self):
         return self.name
@@ -31,7 +31,7 @@ class Project(models.Model):
     title = models.TextField(max_length=200, null=True, blank=True, default="title")
     project_image = models.ImageField(upload_to='picture/', null=True ,blank=True)
     description = models.TextField()
-    project_url=model.URLField(max_length=300)
+    project_url=models.URLField(max_length=300)
 
 class Profile (models.Model):
     class Meta:
@@ -39,17 +39,17 @@ class Profile (models.Model):
     
     bio = models.TextField(max_length=100, null=True, blank=True, default="bio")
     profile_pic = models.ImageField(upload_to='picture/', null=True, blank=True, default=0)
-    user = models.OneToOneField(User, oon_delete=model.CASCADE, null=True, related_name="profile")
-    project=models.ForeignKey(Project,nulel=True)
+    # user = models.OneToOneField(User, oon_delete=model.CASCADE, null=True, related_name="profile")
+    project=models.ForeignKey(Project,null=True)
     contact= models.IntegerField(default=0)
 
 class Image(models.Model):
     image=models.ImageField(upload_to='picture/', )
     name = models.CharField(max_length=30)
-    user= models.ForeignKey(User, on_delete=models.CASCADE, blank=True, related_name="images")
+    # user= models.ForeignKey(User, on_delete=models.CASCADE, blank=True, related_name="images")
     description=models.TextField()
-    location=models.ForeignKey(Location , null=True)
-    tags= model.ManyToManyField(tags,blank=True)
+    # location=models.ForeignKey(Location , null=True)
+    tags= models.ManyToManyField(tags,blank=True)
     # likes = models.IntegerField(default=0)
     # comments= models.TextField(blank=True)
 
