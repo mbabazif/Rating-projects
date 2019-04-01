@@ -33,3 +33,11 @@ class Project(models.Model):
     description = models.TextField()
     project_url=model.URLField(max_length=300)
 
+class Profile (models.Model):
+    class Meta:
+        db_table = 'profile'
+    
+    bio = models.TextField(max_length=100, null=True, blank=True, default="bio")
+    profile_pic = models.ImageField(upload_to='picture/', null=True, blank=True, default=0)
+    user = 
+
