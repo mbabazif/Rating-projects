@@ -11,9 +11,9 @@ from .forms import NewsLetterForm
 from rest_framework import generics
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializers import ProjectSerializer, ProfileSerializer
+# from .serializers import ProjectSerializer, ProfileSerializer
 from rest_framework import status
-from .permissions import IsAdminOrReadOnly
+# from .permissions import IsAdminOrReadOnly
 
 
 
@@ -268,7 +268,7 @@ class ProjectList(APIView):
 
 
 class ProjectDescription(APIView):
-    permission_classes = (IsAdminOrReadOnly,)
+    # permission_classes = (IsAdminOrReadOnly,)
     def get_project(self, pk):
         try:
             return Project.objects.get(pk=pk)
@@ -318,7 +318,7 @@ class ProfileList(APIView):
 
 
 class ProfileDescription(APIView):
-    permission_classes = (IsAdminOrReadOnly,)
+    # permission_classes = (IsAdminOrReadOnly,)
     def get_profile(self, pk):
         try:
             return Profile.objects.get(pk=pk)
