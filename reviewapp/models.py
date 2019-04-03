@@ -1,5 +1,5 @@
 from __future__ import unicode_literals
-import numpy as np
+# import numpy as np
 from django.db.models.signals import post_save
 from django.db.models import Avg, Max, Min
 
@@ -224,5 +224,5 @@ class Like(models.Model):
     def __str__(self):
         return str(self.user) + ':' + str(self.image) + ':' + str(self.value)
 
-    class Meta:
-        unique_together = ("user", "image", "value")
+    # class Meta:
+    #     unique_together = ("user", "image", "value")
