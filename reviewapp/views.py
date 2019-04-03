@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+# from __future__ import unicode_literals
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Image,Location,tags, Profile, Review, NewsLetterRecipients, Like, Project
 from django.http  import HttpResponse, Http404, HttpResponseRedirect, JsonResponse
@@ -189,6 +189,7 @@ def search_image(request):
 #         message = "You haven't searched for any person"
 #         return render(request, 'search.html', {"message": message})
 #
+
 # def user_review_list(request, username=None):
 #     if not username:
 #         username = request.user.username

@@ -224,5 +224,5 @@ class Like(models.Model):
     def __str__(self):
         return str(self.user) + ':' + str(self.image) + ':' + str(self.value)
 
-    # class Meta:
-    #     unique_together = ("user", "image", "value")
+    class Meta:
+        unique_together = ("user", "image", "value")
