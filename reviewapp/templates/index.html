@@ -17,22 +17,26 @@
 <div class="jumbotron itson mb-3 ">
 
   <div class="card-deck flex-wrap">
+    <div class="row">
+    <div class="col-sm-6" style="background-color:pink;">
     {% for project in projects %}
     <div class="card border-secondary w-33"><a href="{% url 'project' project.id %}">
 
-        <img src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"
-          id="eachimage1" size="100px200"></a>
+      <img class="img-responsive" src="{{project.project_image.url}}" data-target="#imageModal{{project.id}}" data-toggle="modal" alt="" class="img-fluid"id="eachimage1" 
+      style="width:450px; height:200px; padding-right: 20px;" ></a>
       <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.description}}</p>
      <p style="font-family: 'Dosis', sans-serif; text-align:center;"> {{ project.user.username}}</p>
      <span class="badge badge-pill badge-info" style="font-family: 'Dosis', sans-serif;">
        <a href="{{ project.project_url}}">Visit Site</a></span>
-      <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;">Like</span>
-  <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}">View Project</a></span>
+      <span class="badge badge-pill badge-danger" style="font-family: 'Dosis', sans-serif; text-align:center;"></span>
+  <span class="badge badge-pill badge-warning" style="font-family: 'Dosis', sans-serif; text-align:center;"><a href="{% url 'project' project.id %}"></a></span>
+   
 
     </div>
     {% endfor %}
   </div>
-
+  </div>
+  </div>  
 
 </div>
 
