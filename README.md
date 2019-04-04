@@ -34,4 +34,11 @@ To run the application, in your terminal:
 $ python3.6 manage.py runserver
 
 
+## Technologies Used:
+
+Python3.6
+
+License: 2019 Florence Mbabazi
+
+
 
