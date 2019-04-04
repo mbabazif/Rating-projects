@@ -18,3 +18,20 @@ curl https://bootstrap.pypa.io/get-pip.py | python.
 
 pip install django.
 
+#### SetUp / Installation Requirements:
+python3.6 django pip
+
+pyperclip
+
+In your terminal:
+
+$ git clone: https://github.com/mbabazif/award-projects.git
+
+You can view this application using this link:https://instagrammba.herokuapp.com/
+
+To run the application, in your terminal:
+
+$ python3.6 manage.py runserver
+
+
+
