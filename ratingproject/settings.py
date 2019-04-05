@@ -63,7 +63,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'reviewapp.apps.ReviewappConfig',
+    'reviewapp.apps.ReviewappsConfig',
     'bootstrap3',
     'django.contrib.admin',
     'django.contrib.auth',
