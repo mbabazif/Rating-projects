@@ -37,7 +37,7 @@ In your terminal:
 
 $ git clone: https://github.com/mbabazif/award-projects.git
 
-You can view this application using this link:https://instagrammba.herokuapp.com/
+You can view this application using this link:https://floaward.herokuapp.com/
 
 To run the application, in your terminal:
 
