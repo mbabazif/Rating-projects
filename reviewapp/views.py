@@ -126,7 +126,7 @@ def edit_profile(request):
 
     if request.method == 'POST':
         form = UpdatebioForm(request.POST, request.FILES, instance=current_user.profile)
-        print(form.is_valid())
+        # print(form.is_valid())
         if form.is_valid():
             image = form.save(commit=False)
             image.user = current_user
