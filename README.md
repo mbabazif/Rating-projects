@@ -1,8 +1,10 @@
-### Awward Application
-#### By Florence Mbabazi
-### Description
-This is an application of awward rating or review projects:
+# Awward Application
 
+By Florence Mbabazi
+
+## Description
+
+This is an application of awward rating or review projects:
 The user is able to:
 
 View posted projects and their details:
@@ -24,29 +26,35 @@ python3.6 -m venv --without-pip virtual.
 
 source virtual/bin/activate.
 
+```bash
 curl https://bootstrap.pypa.io/get-pip.py | python.
-
+```
+```bash
 pip install django.
+```
 
-#### SetUp / Installation Requirements:
+## SetUp / Installation Requirements:
 python3.6 django pip
 
 pyperclip
 
 In your terminal:
 
+```bash
 $ git clone: https://github.com/mbabazif/award-projects.git
+```
 
 You can view this application using this link:https://floaward.herokuapp.com/
 
 To run the application, in your terminal:
 
+```bash
 $ python3.6 manage.py runserver
-
+```
 
 ## Technologies Used:
 
-Python3.6
+$ Python3.6
 
 License: 2019 Florence Mbabazi
 
